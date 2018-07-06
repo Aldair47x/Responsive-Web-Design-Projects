@@ -1,5 +1,4 @@
-## Inspiration
-
+## Inspiration ✍
 
 <p>Having a continuing progressing for all the 5 projects of the Responsive Web Design certification and evidence of these.</p>
 
@@ -7,7 +6,7 @@
 
 <h2>★★ Responsive Web Design Projects ★★</h2>
 
-<li> Build a Tribute Page</li>
+<li> ☑ Build a Tribute Page</li>
 <li> Build a Survey Form</li>
 <li> Build a Product Landing Page</li>
 <li> Build a Technical Documentation Page</li>
