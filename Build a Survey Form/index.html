@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Trocchi|Vast+Shadow" rel="stylesheet">
+    
+    <style>
+
+        html,
+        body {
+        background-image: url("http://fondos.fondoshd.com/images/hd/estadio-de-futbol-5303c5039574b.jpg");
+        text-align: center;
+        font-family: 'Raleway', Helvetica, sans-serif;
+        min-width: 320px;
+        }
+
+        h1{
+            font-family: 'Vast Shadow', cursive;
+            font-size: 45px;
+            color: rgb(55, 130, 160);
+            text-shadow: 
+            -2px -2px 1px #000,
+            1px -2px 1px #000,
+            2px -2px 1px #000,
+            -2px  1px 1px #000,
+            2px  1px 1px #000,
+            -2px  2px 1px #000,
+            1px  2px 1px #000,
+            2px  2px 1px #000;
+            background-image: url("https://thumbs.dreamstime.com/b/fondo-integrado-por-muchos-balones-de-f%C3%BAtbol-31810769.jpg");
+            margin: auto;
+            align-self: auto;
+            border-radius: 4px;
+            width: 75%;
+            max-width: 900px;
+            padding:1%;
+            margin-bottom: 25px; 
+        }
+
+        header {
+        font-size: 2em;
+        font-weight: bold;
+        margin: 20px;
+        }
+
+        #form-outer {
+        background-image: url("https://st2.depositphotos.com/4035529/11230/v/950/depositphotos_112303492-stock-illustration-soccer-champions-trophy-seamless-background.jpg");
+        font-family: 'Trocchi', serif;
+        font-size:20px;
+        color: rgb(50, 179, 132);
+        text-shadow: 
+            -2px -2px 1px black,
+            1px -2px 1px black,
+            2px -2px 1px black,
+            -2px  1px 1px black,
+            2px  1px 1px black,
+            -2px  2px 1px black,
+            1px  2px 1px black,
+            2px  2px 1px black;
+        font-weight: bold;
+        margin: 0 auto;
+        border-radius: 4px;
+        width: 75%;
+        max-width: 900px;
+        padding: 10px;
+        padding-top: 20px;
+        }
+
+        .labels {
+        display: inline-block;
+        text-align: right;
+        width: 40%;
+        padding: 5px;
+        vertical-align: top;
+        margin-top: 10px;
+        }
+
+        .rightTab {
+        display: inline-block;
+        text-align: left;
+        width: 48%;
+        vertical-align: middle;
+        }
+
+        .input-field {
+        height: 20px;
+        width: 280px;
+        padding: 5px;
+        margin: 10px;
+        border: 1px solid #c0c0c0;
+        border-radius: 2px;
+        }
+
+        #userAge {
+        width: 40px;
+        }
+
+        .userRatings,
+        input[type="checkbox"] {
+        float: left;
+        margin-right: 5px;
+        }
+
+        #submit {
+        background-color: #59ace0;
+        border-radius: 4px;
+        color: white;
+        font-size: 1em;
+        height: 40px;
+        width: 96px;
+        margin: 10px;
+        border: 0px solid;
+        }
+
+        .dropdown {
+        height: 35px;
+        width: 140px;
+        padding: 5px;
+        margin: 10px;  
+        margin-top: 15px;
+        border: 1px solid #c0c0c0;
+        border-radius: 2px;
+        }
+
+        .radio, .checkbox {
+        position: relative;
+        left: -43px;
+        margin-left: 10px;
+        display: block;
+        padding-bottom: 10px;
+        }
+
+        @media screen and (max-width: 833px) {
+        .input-field {
+            width: 80%;
+        }
+        select {
+            width: 90%;
+        }
+        }
+
+        @media screen and (max-width: 520px) {
+        .labels {
+            width: 100%;
+            text-align: left;
+        }
+        .rightTab {
+            width: 80%;
+            float: left;
+        }
+        .input-field {
+            width: 100%;
+        }
+        select {
+            width: 100%;
+        }
+        }
+    </style>
+
+</head>
+<body>
+
+
+        <h1 id="title">UEFA Champions League Survey Form</h1>
+        <div id="form-outer">
+          <p id="description">
+            Let us know what you know about the UEFA Champions League in a small test.
+          </p>
+          <form id="survey-form" method="GET" action="">
+            <div class="rowTab">
+              <div class="labels">
+                <label id="name-label" for="name">* Name: </label>
+              </div>
+              <div class="rightTab">
+                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label id="email-label" for="email">* Email: </label>
+              </div>
+              <div class="rightTab">
+                <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label id="number-label" for="age">* Age: </label>
+              </div>
+              <div class="rightTab">
+                <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="currentPos">Which option best describes your passionate soccer role?</label>
+              </div>
+              <div class="rightTab">
+              <select id="dropdown" name="currentPos" class="dropdown">
+              <option disabled value>Select an option</option>
+              <option value="beginner">Only watch clasical matches</option>
+              <option value="aficionado">Like to know all progress but doesn't watch all the games</option>
+              <option value="intermediate">Only follow your favorite team</option>
+              <option value="professional">Enjoy every match</option>
+              <option value="legendary">Full passionate</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="userRating">* What are your best clasical matchin the UEFA Champions League?</label>
+              </div>
+              <div class="rightTab">
+                <ul style="list-style: none;">
+                  <li class="radio"><label>Real Madrid vs Bayern munchen<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+                  <li class="radio"><label>Barcelona FC vs Juventus<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+                  <li class="radio"><label>Liverpool vs Manchester City<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+                  <li class="radio"><label>Atletico de madrid vs Chelsea<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+                </ul>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="most-like">What do you like most in UEFA Champions League: </label>
+              </div>
+              <div class="rightTab">
+                <select id="most-like" name="mostLike" class="dropdown">
+              <option disabled selected value>Select an option</option>
+              <option value="challenges">Country matches</option>
+              <option value="projects">International matches</option>
+              <option value="community">Eliminatory format cup</option>
+              <option value="openSource">Best vs matches</option>
+            </select>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="preferences">Things that should be improved in the future</label>
+              </div>
+              <div class="rightTab">
+                <ul id="preferences" style="list-style: none;">
+                  <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">VAR </label></li>
+                  <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">More clubs capacity</li>
+                  <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Eliminate mundialito cup</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Change the hours of the matches</label></li>
+                </ul>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="comments">Any Comments or Suggestions?</label>
+              </div>
+              <div class="rightTab">
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+              </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+          </form>
+        </div>
+    
+</body>
+</html>
