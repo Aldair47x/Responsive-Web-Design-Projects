@@ -1,6 +1,5 @@
 <h1>UEFA Champions League Survey Form ♛</h1>
 
-
 ## Inspiration
 
 <p>The beginnings for my taste in football.</p>
