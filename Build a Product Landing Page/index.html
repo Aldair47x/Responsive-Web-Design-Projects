@@ -4,9 +4,337 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Handlee|Monoton" rel="stylesheet">
+
+
+    <title>Tomorrowland landing page</title>
+    <style>
+        html{
+            font-family: 'Handlee', cursive;
+          }
+          
+          body {
+            margin: 0;
+            padding: 0;
+          }
+          
+          main {
+            padding-top: 90px;
+          }
+          
+          /* Navbar */
+
+          h1{
+            font-family: 'Bungee Inline', cursive;
+            color: white;
+            text-shadow: 
+            -2px -2px 1px black,
+            1px -2px 1px black,
+            2px -2px 1px black,
+            -2px  1px 1px black,
+            2px  1px 1px black,
+            -2px  2px 1px black,
+            1px  2px 1px black,
+            2px  2px 1px black;
+          }
+          
+          nav {
+
+
+            position: fixed;
+            z-index: 10;
+            background-image: url("https://cdn.pixabay.com/photo/2017/06/30/14/11/background-2458365_960_720.jpg");
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            width: 100%;
+            height: 90px;
+         
+          }
+
+          
+          
+          nav img {
+            height: 70px;
+            
+          }
+          
+          nav img {
+            float: left;
+            margin-top: 10px;
+            margin-left: 10px;
+            height: 70px;
+            width: auto;
+          }
+          
+          nav ul {
+            list-style: none;
+            float: right;
+          }
+          
+          nav ul li {
+            display: inline;
+            margin-right: 40px;
+          }
+          
+          nav ul li a {
+            color: rgb(185, 0, 86);
+            font-family: 'Monoton', cursive;
+            font-size: 30px;
+            text-shadow: 
+            -2px -2px 1px white,
+            1px -2px 1px white,
+            2px -2px 1px white,
+            -2px  1px 1px white,
+            2px  1px 1px white,
+            -2px  2px 1px white,
+            1px  2px 1px white,
+            2px  2px 1px white;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin-right: 20px;
+          }
+          
+          nav ul li a:hover {
+            color: rgb(185, 0, 86);
+          }
+          
+          /* funnel */
+          
+          #funnelcont {
+            background-image: url("https://cdn.wegow.com/media/events/tomorrowland-2018/tomorrowland-2018-1516185336.27.2560x1440.jpg");
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            width: auto;
+            height: auto;
+          }
+
+          
+          #funnel {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 80%;
+            margin: auto;
+            color: white;
+            display: block;
+            text-align: center;
+            padding: 20px;
+          }
+          
+          #funnel h1 {
+            text-align: center;
+            margin: 10px;
+          }
+          
+          .area {
+            margin: auto;
+            margin-top: 10px;
+            border: 2px solid black;
+            max-width: 48%;
+          }
+          
+          img {
+            max-width: 80%;
+            max-height: 500px;
+            display: block;
+            margin: -40px auto -40px auto;
+            text-align: center;
+          }
+          
+          /* Email */
+          
+          #email {
+            width: 50%;
+            font-size: 24px;
+            text-align: center;
+          }
+          
+          /* Pricing Boxes */
+          
+          .pricing {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+          }
+          
+          .box {
+            border: 2px solid rgb(185, 0, 86);
+            margin: auto;
+            width: 500px;
+            margin-top: 10px;
+          }
+          
+          .pricingheader {
+            font-size: 24px;
+            vertical-align: middle;
+            text-align: center;
+            background-color: rgb(185, 0, 86);
+            color: white;
+          }
+          
+          .price {
+            font-size: 48px;
+            vertical-align: middle;
+            text-align: center;
+            font-weight: bolder; 
+            background-color: white;
+          }
+          
+          /* Buttons */
+          
+          .button {
+            font-size: 20px;
+            background-color: rgb(185, 0, 86);
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 12px;
+            margin: 10px auto 10px auto;
+          } 
+          
+          #submit {
+            font-size: 20px;
+            background-color: rgb(185, 0, 86);
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 12px;
+            margin: 10px auto 10px auto;
+          } 
+          
+          /* Main text */
+          
+          #maintext {
+            font-size: 20px;
+            max-width: 80%;
+            margin: auto;
+          }
+          
+          #maintext h1 {
+            text-align: center;
+            margin: 0;
+          }
+          
+          /* Video */
+          
+          #vidcont {
+            max-width: 80%;
+            margin: auto;
+            text-align: center;
+          }
+          
+          /* Footer */ 
+          
+          footer {
+            background-image: url("https://print.fdmplc.com/wp-content/uploads/2017/10/footer-background.png");
+            color: blue;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            width: 100%;
+            height: 50px;
+          }
+          
+          footer ul {
+            list-style: none;
+            float: right;
+          }
+          
+          footer ul li {
+            display: inline;
+            margin-right: 40px;
+          }
+          
+          footer a {
+            color: white;
+            font-size: 1em;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin-right: 20px;
+          }
+          
+          footer a:hover {
+            color: rgb(41, 245, 58);
+          }
+          
+          /* Media query */
+          
+          @media (max-width: 1100px) {
+            #maintext {
+              font-size: 18px;
+            }
+          }
+    </style>
+
 </head>
 <body>
-    
+        <header id="header">
+                <nav id="nav-bar">
+                  <a href="#"><img src="https://vignette.wikia.nocookie.net/logopedia/images/b/b9/Tomorrowland.png/revision/latest?cb=20170124224357" alt="Company logo" id="header-img"></a>
+                  <ul>
+                    <li>
+                      <a href="#funnelcont" class="nav-link">Tickets </a>
+                      <a href="#maintext" class="nav-link">About </a>
+                      <a href="#pricing" class="nav-link">Prices </a>
+                    </li>
+                  </ul>
+                </nav>
+              </header>
+              
+              <main>
+              
+                <div id="funnelcont">
+                  <div id="funnel">
+                    <h1>Tomorrowland</h1>
+                    <h2>Festival - Tickets</h2>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <form id="form" action="#">
+                      <input type="email" name="email" id="email" class="rightcol" placeholder="@Aldair47x" required>
+                      <input type="submit" id="submit" class="button" value="Send information"></input> 
+                    </form>
+                  </div>
+                </div>  
+              
+                <div id="maintext">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus, diam id ullamcorper dictum, urna magna ultrices ligula, sed tristique mi leo et sem. Ut efficitur sit amet enim non pellentesque. Vestibulum fringilla accumsan arcu vel accumsan. Nullam et metus neque. Nullam malesuada aliquet congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla commodo nisi vel ligula porttitor faucibus. Vestibulum in orci ac velit vestibulum pulvinar vitae eu odio. Donec nec sollicitudin massa, quis pharetra velit. Vivamus iaculis magna mattis aliquet bibendum. Maecenas mi nulla, efficitur ac enim a, iaculis pellentesque lorem. Aliquam felis odio, laoreet eget quam eget, tempus elementum justo. Duis semper sagittis leo, non commodo neque feugiat at.</p>
+                </div>
+              
+                <div id="vidcont">
+                  <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/KOl8LjKLDLs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>    
+                </div>
+              
+                <div class="pricing" id="pricing">
+                  <div class="box" id="box1">
+                    <div class="pricingheader">Full Madness Pass</div>
+                    <div class="price">€ 281</div>
+                    <button type="submit" class="button">BUY NOW</button>
+                  </div>
+                  <div class="box" id="box2">
+                        <div class="pricingheader">Glorious Sunday Pass</div>
+                        <div class="price">€ 115</div>
+                        <button type="submit" class="button">BUY NOW</button>
+                   </div>
+                   <div class="box" id="box3">
+                        <div class="pricingheader">Incredible Saturday Pass</div>
+                        <div class="price">€ 101</div>
+                        <button type="submit" class="button">BUY NOW</button>
+                      </div>
+                  <div class="box" id="box4">
+                    <div class="pricingheader">Magical Friday Pass                        </div>
+                    <div class="price">€ 94</div>
+                    <button type="submit" class="button">BUY NOW</button>    
+                  </div>
+                  
+                  
+                </div>
+              
+              
+              <footer>
+                <ul>
+                  <li>
+                    <a href="#privacy">Privacy</a>
+                    <a href="#terms">Terms</a>
+                    <a href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </footer>
 </body>
 </html>
