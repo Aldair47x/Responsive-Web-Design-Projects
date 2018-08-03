@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!-- My CSS styles -->
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+    
+    /*---------- Site Wide  ----------*/
+
+/* Button colours - normal */
+.btn-primary {
+    color: white;
+    background-color:  rgb(59, 97, 158);
+    border-color:  rgb(78, 242, 56);
+}
+
+/* Button colours - Hover */
+.btn-primary:hover {
+    color: white;
+    background: linear-gradient(to right, rgba(124, 119, 119, 0.829), rgb(35, 23, 102));
+    
+
+}
+
+/* Responsive text */
+html {
+  font-size: 14px;
+}
+
+
+
+/* Navbar & Footer text colour - normal */
+#colourmein {
+  color: #F5A503;
+}
+
+/* Navbar & Footer text colour - hover */
+#colourmein:hover {
+  color:  rgb(59, 97, 158);
+}
+
+
+/*---------- welcome-section ----------*/
+
+/* Horizontal rule formatting */
+#welcome-section hr {
+  background-color: white;
+  height: 0.1rem
+}
+
+/* welcome-section text colour */
+#welcome-section {
+  color: #E9F1DF;
+}
+
+/* welcome-section image formatting */
+.rounded-circle {
+  height: 50%;
+  width: 50%;
+  border: 0.3rem solid #E9F1DF;
+}
+
+/* welcome-section padding & colour */
+.jumbotron {
+  padding-bottom: 2rem;
+  margin-bottom: 0.3rem;
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/images1/Bar-3d-colorful-HD-wallpaper.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/* welcome-section heading font size */
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+/* welcome-section container width */
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+/* welcome-section container height */
+#welcome-section {
+  height: 100vh;
+}
+
+/* welcome-section margin top*/
+
+#welcome-sectionimg {
+  margin-top: 50px;
+}
+
+
+
+
+
+
+/*---------- About ----------*/
+
+/* Horizontal rule formatting */
+#About hr {
+  background-color: #36B1BF;
+  height: 0.1rem
+}
+
+/* welcome-section text formatting */
+#About h1 {
+  color: #36B1BF;
+}
+
+/* Padding */
+#About {
+  padding-top: 2rem;
+}
+
+
+/*---------- Projects ----------*/
+
+/* Horizontal rule formatting */
+#projects hr {
+  background-color: #36B1BF;
+  height: 0.1rem
+}
+
+/* welcome-section text formatting */
+#projects h1 {
+  color: #36B1BF;
+}
+
+/* Padding */
+#projects {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Center align the text */
+#projects {
+  text-align: center !important;
+}
+
+/* Enlarge button*/
+.btn {
+  display: block;
+}
+
+.card {
+  display: block;
+  margin: 0 auto;
+  width: 100% !important;
+}
+
+/*---------- Footer ----------*/
+
+/* Footer text size/colour */
+.footer i {
+  padding: 0px 20px;
+  color: #F5A503;
+}
+
+/* Footer icon positioning */
+.footer .fa {
+    display:inline-block;
+    vertical-align:middle;
+}
+
+/* Footer sizing */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px; /* Vertically center the text */
+  background-color: #f5f5f5;
+}
+
+/* For footer positioning */
+html {
+  position: relative;
+  min-height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Margin bottom by footer height */
+body {
+  margin-bottom: 60px;
+}
+
+
+
+/*---------- Miscellaneous - Site colours (for reference) ----------*/
+
+/* Red/Pink */
+#colour1 {
+  background-color:  rgb(59, 97, 158);
+}
+
+/* Orange */
+#colour2 {
+  background-color: #F5A503;
+}
+
+/* White(ish) */
+#colour3 {
+  background-color: #E9F1DF;
+}
+
+/* Lighter Blue */
+#colour4 {
+  background-color: #4AD9D9;
+}
+
+/* Darker Blue */
+#colour5 {
+  background-color: #36B1BF;
+}
+
+/*---------- Social Media / Font Awesome Icons ----------*/
+
+/* LinkedIn icon - normal */
+.fa-linkedin-square {
+  color: #E9F1DF;
+}
+
+/* LinkedIn icon - hover */
+.fa-linkedin-square:hover {
+  color: #007bb6;
+}
+
+/* Github icon - normal */
+.fa-github {
+  color: #E9F1DF;
+}
+
+/* Github icon - hover */
+.fa-github:hover {
+  color: #833ab4;
+}
+
+/* Twitter icon - normal */
+.fa-twitter-square {
+  color: #E9F1DF;
+}
+
+/* Twitter icon - hover */
+.fa-twitter-square:hover {
+  color: #00aced;
+}
+
+/* Medium icon - normal */
+.fa-medium {
+  color: #E9F1DF;
+}
+
+/* Medium icon - hover */
+.fa-medium:hover {
+  color: #02b875;
+}
+    
+    </style>
+</head>
+
+  
+<body>
+
+  <!-- Navigation -->
+
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light" id="navbar">
+    <div class="mt-2 container lead text">
+      <a class="navbar-brand" id="colourmein" href="#"><strong>TOM BELL</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" id="colourmein" href="#About">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="colourmein" href="#Contact">GET IN TOUCH</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- welcome-section -->
+
+  <div class="jumbotron text-center" id="welcome-section">
+    <div class="container" id="myheader">
+      <img src="img/Tom Bell.jpg" class="img-fluid rounded-circle" id="welcome-sectionimg">
+      <p></p>
+      <h1 class="display-3">TOM BELL</h1>
+      <hr>
+      <h2 class="display-5">LEARNING WEB DEVELOPMENT</a></h2>
+      <br>
+      <div class="container">
+        <span class="container">
+          <a href="https://github.com/thomasjbell7" target="_blank" id="profile-link"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
+        </span>
+        <span class="container">
+          <a href="https://twitter.com/thomasjbell7" target="_blank"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
+        </span>
+        <span class="container">
+          <a href="https://medium.com/@thomasjbell8" target="_blank"><i class="fa fa-medium fa-4x" aria-hidden="true"></i></a>
+        </span>
+        <span class="container">
+          <a href="https://www.linkedin.com/in/tombell7/" target="_blank"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
+        </span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- About -->
+    
+  <div class="container-fluid lead text text-justify" id="About">
+    <div class="container">
+      <h1 class="text-center">ABOUT</h1>
+      <hr>
+      <br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in pulvinar nibh, et dictum massa. Ut facilisis augue id libero facilisis, nec ornare felis fringilla. Donec metus sem, dictum id suscipit quis, consequat a orci. Aliquam convallis elementum vestibulum. Integer purus libero, molestie quis efficitur vitae, consectetur sed nulla. Mauris quis magna et mi venenatis venenatis vitae non magna. Donec a imperdiet neque. Quisque vestibulum magna in purus rutrum porta. Suspendisse potenti. Proin in pharetra turpis.</p>
+      <p>Donec sed mauris ut quam luctus accumsan vel id leo. Sed condimentum, nulla quis eleifend pharetra, erat nulla tincidunt diam, vitae pretium nulla nisl sit amet dolor. Morbi ullamcorper risus scelerisque suscipit sollicitudin. Phasellus a diam semper mauris maximus porta. Sed eu aliquet libero. Etiam ut pellentesque ante. Cras euismod lorem ipsum, at auctor turpis fringilla vitae.</p>
+      <p>Praesent lacinia libero quis dictum faucibus. Proin erat libero, euismod a dictum ut, rutrum a diam. Nulla placerat luctus nunc, a egestas velit finibus in. Praesent et dignissim orci, a gravida odio. Vivamus ullamcorper eu quam a tempus. Mauris velit massa, lobortis in tortor in, faucibus tincidunt purus. Donec dignissim interdum sapien, ut hendrerit nisi cursus vel. Mauris euismod eu libero vel efficitur. Suspendisse a nunc nisi. Vestibulum interdum elit at iaculis pretium. Donec mollis tortor consectetur, suscipit libero vel, finibus metus. Vivamus nec neque euismod sem convallis lobortis. Suspendisse sed libero sit amet dolor efficitur iaculis. Vestibulum rhoncus risus eu iaculis fringilla.</p>
+    </div>
+  </div>
+
+  <!-- Projects -->
+    
+  <div class="container-fluid lead text text-justify">
+    <div class="container">
+      <h1 class="text-center">PROJECTS</h1>
+      <hr>
+      <br>
+      <div class="row" id="projects">
+        <div class="col-sm project-tile">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="http://via.placeholder.com/350x150" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">PROJECT TITLE</h5>
+              <p class="card-text">This is a brief description of the project and what it does.</p>
+              <a href="https://www.google.com" target="_blank" class="btn btn-primary">VIEW PROJECT</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm project-tile">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="http://via.placeholder.com/350x150" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">PROJECT TITLE</h5>
+              <p class="card-text">This is a brief description of the project and what it does.</p>
+              <a href="https://www.google.com" target="_blank" class="btn btn-primary">VIEW PROJECT</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm project-tile">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="http://via.placeholder.com/350x150" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">PROJECT TITLE</h5>
+              <p class="card-text">This is a brief description of the project and what it does.</p>
+              <a href="https://www.google.com" target="_blank" class="btn btn-primary">VIEW PROJECT</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  
+  <footer class="footer">
+    <div class="container lead text" id="colourmein">
+      <span class="pull-right">
+        <a href="https://www.linkedin.com/in/tombell7/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+      </span>
+      <span class="pull-right">
+        <a href="https://www.medium.com/@thomasjbell8" target="_blank"><i class="fa fa-medium fa-2x" aria-hidden="true"></i></a>
+      </span>
+      <span class="pull-right">
+        <a href="https://www.twitter.com/thomasjbell7" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+      </span>
+      <span class="pull-right">
+        <a href="https://github.com/thomasjbell7" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+      </span>
+    </div>
+  </footer>
+  
+  <!-- JavaScript -->
+  
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <!-- Font awesome - for icons -->
+  <script src="https://use.fontawesome.com/1923cc6bc8.js"></script>
+  <!-- FCC testing -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
+</body>
+</html>
