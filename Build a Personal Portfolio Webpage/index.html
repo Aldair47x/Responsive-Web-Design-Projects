@@ -22,6 +22,75 @@
     
     /*---------- Site Wide  ----------*/
 
+/* about */
+
+#container-main{
+	margin:40px auto;
+	width:95%;
+	min-width:320px;
+	max-width:960px;
+}
+
+
+.accordion-container {
+	width: 100%;
+	margin: 0 0 20px;
+	clear:both;
+}
+
+.accordion-titulo {
+	position: relative;
+	display: block;
+	padding: 20px;
+	font-size: 24px;
+	font-weight: 300;
+	background: #2c3e50;
+	color: #fff;
+	text-decoration: none;
+}
+.accordion-titulo.open {
+	background: #16a085;
+	color: #fff;
+}
+.accordion-titulo:hover {
+	background: #1abc9c;
+}
+
+.accordion-titulo span.toggle-icon:before {
+	content:"+";
+}
+
+.accordion-titulo.open span.toggle-icon:before {
+	content:"-";
+}
+
+.accordion-titulo span.toggle-icon {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 38px;
+	font-weight:bold;
+}
+
+.accordion-content {
+	display: none;
+	padding: 20px;
+	overflow: auto;
+}
+
+.accordion-content p{
+	margin:0;
+}
+
+.accordion-content img {
+	display: block;
+	float: left;
+	margin: 0 15px 10px 0;
+	width: 50%;
+	height: auto;
+}
+
+
 /* Button colours - normal */
 .btn-primary {
     color: white;
@@ -376,15 +445,22 @@ body {
     
   <div class="container-fluid lead text text-justify" id="About">
     <div class="container">
-      <h1 class="text-center">ABOUT</h1>
       <hr>
-      <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in pulvinar nibh, et dictum massa. Ut facilisis augue id libero facilisis, nec ornare felis fringilla. Donec metus sem, dictum id suscipit quis, consequat a orci. Aliquam convallis elementum vestibulum. Integer purus libero, molestie quis efficitur vitae, consectetur sed nulla. Mauris quis magna et mi venenatis venenatis vitae non magna. Donec a imperdiet neque. Quisque vestibulum magna in purus rutrum porta. Suspendisse potenti. Proin in pharetra turpis.</p>
-      <p>Donec sed mauris ut quam luctus accumsan vel id leo. Sed condimentum, nulla quis eleifend pharetra, erat nulla tincidunt diam, vitae pretium nulla nisl sit amet dolor. Morbi ullamcorper risus scelerisque suscipit sollicitudin. Phasellus a diam semper mauris maximus porta. Sed eu aliquet libero. Etiam ut pellentesque ante. Cras euismod lorem ipsum, at auctor turpis fringilla vitae.</p>
-      <p>Praesent lacinia libero quis dictum faucibus. Proin erat libero, euismod a dictum ut, rutrum a diam. Nulla placerat luctus nunc, a egestas velit finibus in. Praesent et dignissim orci, a gravida odio. Vivamus ullamcorper eu quam a tempus. Mauris velit massa, lobortis in tortor in, faucibus tincidunt purus. Donec dignissim interdum sapien, ut hendrerit nisi cursus vel. Mauris euismod eu libero vel efficitur. Suspendisse a nunc nisi. Vestibulum interdum elit at iaculis pretium. Donec mollis tortor consectetur, suscipit libero vel, finibus metus. Vivamus nec neque euismod sem convallis lobortis. Suspendisse sed libero sit amet dolor efficitur iaculis. Vestibulum rhoncus risus eu iaculis fringilla.</p>
+      <h1 class="text-center">ABOUT</h1>
+      <div id="container-main">
+        <h1>Résumé personnel et compétences</h1>
+          <div class="accordion-container">
+            <a class="accordion-titulo" onclick="return blmostrocult(this);" style="cursor: hand; cursor: pointer;">ESPAÑOL</a><div class="accordion-content" style="display: none;"> <p>hola</p> </div>
+            <hr>
+            <a class="accordion-titulo" onclick="return blmostrocult(this);" style="cursor: hand; cursor: pointer;">ENGLISH</a><div class="accordion-content" style="display: none;"> <p>hola</p> </div>
+            <hr>
+            <a class="accordion-titulo" onclick="return blmostrocult(this);" style="cursor: hand; cursor: pointer;">FRANÇAIS</a><div class="accordion-content" style="display: none;"> <p>hola</p> </div>
+            <hr>
+        
+          </div>
+      </div>
     </div>
   </div>
-
 
   <!-- Projects -->
     
@@ -442,7 +518,17 @@ body {
   </footer>
   
   <!-- JavaScript -->
-  
+  <script type='text/JavaScript'>
+    function blmostrocult(blconted) {
+    var c=blconted.nextSibling;
+    if(c.style.display=='none') {
+    c.style.display='block';
+    } else {
+    c.style.display='none';
+    }
+    return false;
+    }
+  </script>
 
     
 </body>
